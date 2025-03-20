@@ -4,4 +4,5 @@ verilog work vlog05_file.v
 vhdl work vhdl_file.vhd
 vhdl libx vhdl_lfile
 vhdl2008 work vhdl2008_file
+vhdl2019 work vhdl2019_file
 sv work sv_file.sv another_sv_file.sv

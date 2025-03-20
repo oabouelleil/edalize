@@ -34,6 +34,7 @@ files.update(
         "vlog05_file.v": lib.add_source_file("vlog05_file.v"),
         "vhdl_file.vhd": lib.add_source_file("vhdl_file.vhd"),
         "vhdl2008_file": lib.add_source_file("vhdl2008_file", vhdl_standard="2008"),
+        "vhdl2019_file": lib.add_source_file("vhdl2019_file", vhdl_standard="2019"),
         "another_sv_file.sv": lib.add_source_file("another_sv_file.sv"),
     }
 )

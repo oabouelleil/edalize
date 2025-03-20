@@ -2,7 +2,7 @@
 <efx:project name="design" description="" last_change_date="" location="" sw_version="" xmlns:efx="http://www.efinixinc.com/enf_proj" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/enf_proj enf_proj.xsd">
     <efx:device_info>
 <efx:family name="Trion"/><efx:device name="T8F81"/><efx:timing_model name="C2"/>    </efx:device_info>
-    <efx:design_info  def_veri_version="verilog_2k" def_vhdl_version="vhdl_2008">
+    <efx:design_info  def_veri_version="verilog_2k" def_vhdl_version="vhdl_2019">
 <efx:top_module name="top_module"/>        <efx:design_file name="sv_file.sv" version="sv_09"/>
         <efx:design_file name="vlog_file.v" version=""/>
         <efx:design_file name="vlog_with_define.v" version=""/>
@@ -11,6 +11,7 @@
         <efx:design_file name="vhdl_file.vhd" version=""/>
         <efx:design_file name="vhdl_lfile" version=""/>
         <efx:design_file name="vhdl2008_file" version=""/>
+        <efx:design_file name="vhdl2019_file" version=""/>
         <efx:design_file name="another_sv_file.sv" version="sv_09"/>
 <efx:top_vhdl_arch name=""/>
     </efx:design_info>

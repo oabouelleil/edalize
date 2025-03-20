@@ -142,6 +142,7 @@ class Quartus(Edatool):
         self.jinja_env.filters["qsys_file_filter"] = self.qsys_file_filter
 
         has_vhdl2008 = "vhdlSource-2008" in [x.file_type for x in src_files]
+        has_vhdl2019 = "vhdlSource-2019" in [x.file_type for x in src_files]
         has_qsys = "QSYS" in [x.file_type for x in src_files]
 
         escaped_name = self.name.replace(".", "_")
@@ -156,6 +157,7 @@ class Quartus(Edatool):
             "vlogdefine": self.vlogdefine,
             "generic": self.generic,
             "has_vhdl2008": has_vhdl2008,
+            "has_vhdl2019": has_vhdl2019,
         }
 
         # Render Makefile based on detected version

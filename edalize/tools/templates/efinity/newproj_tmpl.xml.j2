@@ -11,7 +11,7 @@
         <efx:timing_model name="{{tool_options.timing}}"/>
         {%- endif %}
     </efx:device_info>
-    <efx:design_info  def_veri_version="verilog_2k" def_vhdl_version="vhdl_2008">
+    <efx:design_info  def_veri_version="verilog_2k" def_vhdl_version="{{vhdl_version}}">
         {% if tool_options.timing -%}
     	<efx:top_module name="{{toplevel}}"/>
         {%- endif %}

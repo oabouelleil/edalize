@@ -5,4 +5,5 @@ sv work vlog05_file.v
 vhdl work vhdl_file.vhd
 vhdl work libx vhdl_lfile
 vhdl work vhdl2008_file
+vhdl work vhdl2019_file
 sv work another_sv_file.sv

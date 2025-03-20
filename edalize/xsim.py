@@ -87,6 +87,8 @@ XSIM_OPTIONS  = {xsim_options}
                     cmd = "verilog"
                 elif src_file.file_type == "vhdlSource-2008":
                     cmd = "vhdl2008"
+                elif src_file.file_type == "vhdlSource-2019":
+                    cmd = "vhdl2019"
                 elif src_file.file_type.startswith("vhdlSource"):
                     cmd = "vhdl"
                 elif src_file.file_type.startswith("systemVerilogSource"):

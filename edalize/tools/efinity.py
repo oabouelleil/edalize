@@ -60,6 +60,11 @@ class Efinity(Edatool):
         dep_files = []
         unused_files = []
 
+        if "vhdlSource-2019" in [x["file_type"] for x in self.files]:
+            vhdl_version = "vhdl_2019"
+        else:
+            vhdl_version = "vhdl_2008"
+
         for f in self.files:
             _fn = f["name"]
             _ft = f.get("file_type", "")
@@ -104,6 +109,7 @@ class Efinity(Edatool):
             "vlogparam": self.vlogparam,
             "vlogdefine": self.vlogdefine,
             "generic": self.generic,
+            "vhdl_version": vhdl_version,
         }
 
         commands = EdaCommands()

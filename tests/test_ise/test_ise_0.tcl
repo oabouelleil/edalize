@@ -30,4 +30,5 @@ xfile add vhdl_file.vhd
 lib_vhdl new libx
 xfile add vhdl_lfile -lib_vhdl libx
 xfile add vhdl2008_file
+xfile add vhdl2019_file
 project set top "top_module"

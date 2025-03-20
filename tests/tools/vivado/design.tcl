@@ -19,6 +19,7 @@ read_verilog {vlog05_file.v}
 read_vhdl {vhdl_file.vhd}
 read_vhdl -library libx {vhdl_lfile}
 read_vhdl -vhdl2008 {vhdl2008_file}
+read_vhdl -vhdl2019 {vhdl2019_file}
 read_ip {xci_file.xci}
 read_xdc {xdc_file.xdc}
 read_mem {bootrom.mem}

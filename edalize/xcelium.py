@@ -130,7 +130,9 @@ class Xcelium(Edatool):
                 cmd = "xmvhdl"
                 if f.file_type.endswith("-93"):
                     args = ["-v93"]
-                if f.file_type.endswith("-2008"):
+                elif f.file_type.endswith("-2008"):
+                    args = ["-v200x"]
+                elif f.file_type.endswith("-2019"):
                     args = ["-v200x"]
                 else:
                     args = []

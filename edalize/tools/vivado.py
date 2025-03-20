@@ -127,6 +127,8 @@ class Vivado(Edatool):
                 if file_type == "vhdlSource-2008":
                     has_vhdl2008 = True
                     cmd += " -vhdl2008"
+                if file_type == "vhdlSource-2019":
+                    cmd += " -vhdl2019"
                 if f.get("logical_name"):
                     cmd += " -library " + f["logical_name"]
             elif file_type == "xci":

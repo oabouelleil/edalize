@@ -8,8 +8,8 @@ work/AN.DB/make.vlogan: sv_file.sv vlog_file.v vlog05_file.v another_sv_file.sv 
 work_1/AN.DB/make.vlogan: vlog_with_define.v vlog_incfile work_1.f
 	$(EDALIZE_LAUNCHER) vlogan -full64 -file work_1.f -work work_1 -l work_1.log vlog_with_define.v
 
-work_2/64/vhmra.sdb: vhdl_file.vhd vhdl2008_file vlog_incfile work_2.f
-	$(EDALIZE_LAUNCHER) vhdlan -full64 -file work_2.f -work work_2 -l work_2.log vhdl_file.vhd vhdl2008_file
+work_2/64/vhmra.sdb: vhdl_file.vhd vhdl2008_file vhdl2019_file vlog_incfile work_2.f
+	$(EDALIZE_LAUNCHER) vhdlan -full64 -file work_2.f -work work_2 -l work_2.log vhdl_file.vhd vhdl2008_file vhdl2019_file
 
 libx/64/vhmra.sdb: vhdl_lfile libx.f
 	$(EDALIZE_LAUNCHER) vhdlan -full64 -file libx.f -work libx -l libx.log vhdl_lfile

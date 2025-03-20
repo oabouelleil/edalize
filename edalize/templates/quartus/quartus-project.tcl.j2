@@ -4,7 +4,9 @@ set_global_assignment -name DEVICE {{ tool_options.device }}
 {% if toplevel %}
 set_global_assignment -name TOP_LEVEL_ENTITY {{ toplevel }}
 {% endif %}
-{% if has_vhdl2008 %}
+{% if has_vhdl2019 %}
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2019
+{% elif has_vhdl2008 %}
 set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
 {% endif %}
 {% if vlogparam %}

@@ -30,6 +30,7 @@ create_links \
     -hdl_source {vlog05_file.v} \
     -hdl_source {vhdl_file.vhd} \
     -hdl_source {vhdl2008_file} \
+    -hdl_source {vhdl2019_file} \
     -hdl_source {another_sv_file.sv} \
     -io_pdc {pdc_constraint_file.pdc} \
     -fp_pdc {pdc_floorplan_constraint_file.pdc} \
